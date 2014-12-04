@@ -65,6 +65,7 @@ function edit(tittle){
     })
     if (editOne.length != 1) {
         alert("商品名不唯一！");
+	return;
     };
     var newImg=prompt(_.first(editOne).name+"的商品路径",_.first(editOne).img);
     var newDes=prompt(_.first(editOne).name+"的商品描述",_.first(editOne).desc);
